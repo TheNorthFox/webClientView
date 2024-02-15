@@ -1,0 +1,57 @@
+
+
+
+<div class="container">
+    <div class="row">
+      <div class="col-9">
+        
+        <h4 style="padding-top: 20px;">Post Creation Form</h4>
+    
+    <!-- <div class="card-body">
+      <h5 class="card-title">Post Creation form</h5>
+      <form (ngSubmit)="onSubmit()">
+        <div>
+        <label for="userId">UserId:</label>
+        <input id="userId" [(ngModel)]="post.userId" name="userId" required>
+    </div>
+    <div>
+        <label for="id">Id:</label>
+        <input id="id" [(ngModel)]="post.id" name="id" required>
+    </div>
+    <div>
+        <label for="title">Title:</label>
+        <input id="title" [(ngModel)]="post.title" name="title" required>
+    </div>
+    <div>
+        <label for="body">Body:</label>
+    
+        <textarea class="form-control mb-3" id="body" [(ngModel)]="post.body" name="body" required rows="3"></textarea>
+    </div>
+      </form>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </div> -->
+ 
+
+  
+  <form (ngSubmit)="onSubmit()">
+  <div class="mb-3">
+    <label for="formGroupExampleInput" class="form-label">UserId</label>
+    <input type="text" class="form-control" id="userId" [(ngModel)]="post.userId" name="userId" required placeholder="userId">
+  </div>
+  <div class="mb-3">
+    <label for="formGroupExampleInput" class="form-label">Id</label>
+    <input type="text" class="form-control" id="id" [(ngModel)]="post.id" name="id" required placeholder="id">
+  </div>
+  <div class="mb-3">
+    <label for="formGroupExampleInput" class="form-label">Title</label>
+    <input type="text" class="form-control" id="title" [(ngModel)]="post.title" name="title" required placeholder="title">
+  </div>
+  <div class="mb-3">
+    <label for="formGroupExampleInput" class="form-label">Description</label>
+    <textarea class="form-control mb-3" id="body" [(ngModel)]="post.body" name="body" required rows="3"></textarea>
+  </div>
+  </form>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</div>
+</div>
+</div>
